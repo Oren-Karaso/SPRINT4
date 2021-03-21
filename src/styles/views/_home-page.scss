@@ -1,0 +1,56 @@
+.home-page {
+    color: $clr3;
+    height: 100vh;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+
+    .home-page-header {
+        grid-column: 1;
+        grid-row: 1 / 2;
+        display: flex;
+        align-items: center;
+    }
+
+    .main-content {
+        grid-column: 1;
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+
+        > * {
+            padding: 0 2rem;
+        }
+    }
+
+    span {
+        color: $clr5;
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    .logo {
+        width: 19rem;
+    }
+
+    .try-btn {
+        margin: 2px;
+        padding: 8px 15px;
+        background-color: $clr5;
+        border: 1px solid $clr2;
+        border-radius: 4px;
+        color: $clr2;
+
+        &:hover {
+            color: $clr5;
+            background-color: $clr2;
+            border: 1px solid $clr3;
+        }
+
+        &:active {
+            color: $clr2;
+        }
+    }
+}

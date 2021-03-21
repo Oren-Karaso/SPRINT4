@@ -1,0 +1,14 @@
+.members{
+  display: flex;
+  flex-direction: row;
+
+  .miniUser{
+      margin-right: -15px;
+  }
+
+  .rest-of-members-avatar{
+      font-size: large;
+      // margin-left: -10px;
+
+  }
+}

@@ -1,0 +1,111 @@
+.board-details {
+    background-color: $clr5;
+    min-height: 100vh;
+    display: flex;
+
+    .board-static-header{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: white;
+
+        .board-title-input,
+        .board-description-input {
+            border: 1px dashed transparent;
+            padding: 3px 7px 3px 0;
+            background-color: inherit;
+            color: $clr3;
+            font-size: 17px;
+        }
+
+        .board-title-input {
+            font-size: 25px;
+        }
+    
+        .board-description-input {
+            min-width: 400px;
+            margin-bottom: 5px;
+        }
+
+        .created-by {
+            color: $clr3;
+            font-size: 15px;
+            cursor: pointer;
+            margin-bottom: 10px;
+    
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .add-view-card {
+            flex-direction: column;
+            position: absolute;
+            width: 150px;
+            z-index: 5;
+            background-color: #fff;
+            padding: 5px;
+            border-radius: 3px;
+            box-shadow: 0 1px 2px 0 rgba(159, 159, 160, 0.3), 0 1px 3px 1px rgba(149, 152, 153, 0.15);
+            font-size: 14px;
+            // transform: translate(12px, 40px);
+            > * {
+                text-align: left;
+                cursor: pointer;
+                padding: 3px 1px;
+
+                img {
+                    margin-right: 10px;
+                }
+
+                &:hover {
+                    background-color: rgb(246, 246, 246);
+                }
+            }
+        }
+    }
+
+    .board-top-row{
+        height: 70px;    
+    }
+
+    .add-view-card{
+        width: 200px;
+        position: absolute;
+    }
+
+    .btn-add-view-menu{
+        width: 13px;
+        margin-right: 5px;
+    }
+
+    .add-view-row-container{
+        width: 100%;
+        border: 1px solid transparent;
+        box-shadow: 0 3px 4px -5px #484444;
+
+        .add-view-btn{
+            margin: 10px 0;
+            background-color: #fff;
+            color: $clr3;
+            border-color: $clr4;
+
+            &:hover {
+                background-color: $clr4;
+            }
+        }
+    }
+
+    .btn-add-group {
+        margin: 10px 0;
+    }
+
+    .details-wrapper {
+        width: 100%;
+        padding: 0 30px;
+        border-top-left-radius: 10px;
+        background-color: #fff;
+    }
+
+    
+}

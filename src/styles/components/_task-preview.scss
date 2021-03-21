@@ -1,0 +1,101 @@
+.task-preview {
+    display: flex;
+    height: 35px;
+    background-color: $clr2;
+    margin-bottom: .0625rem;
+    border-radius: 1px;
+    border-right: 8px solid #e6e9ef;
+    transition: background-color .3s;
+    padding: 0 .625rem;
+    color: $clr3;
+    font-size: .8125rem;
+    justify-content: space-between;
+
+    &:hover {
+        background-color: #E6E9EF;
+
+        .btns-hidden{
+            opacity: 1;
+        }
+    }
+
+    .members-container,
+    .status-container,
+    .date-picker-container,
+    .priority-container {
+        width: 9.375rem;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .date-picker-container,
+    .members-container {
+        padding: 0 10px;
+    }
+
+    .status,
+    .priority {
+        width: 9.375rem;
+        padding: 0 10px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .date-picker {
+        width: 130px;
+    }
+
+    .task-left-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .remove-title-wrapper {
+            width: 100%;   
+            
+            form{
+                width:100%
+            }
+        }
+        .task-title {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-right: 10px;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            background-color: $clr2;
+        }
+        .el-icon-delete{
+            margin-right: 5px;
+        }
+        .el-icon-delete, .el-icon-edit{
+            font-size: 11px;
+        }
+    }
+
+    .task-right-container {
+        min-width: 700px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .members {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .status,
+    .priority {
+        color: #fff;
+    }
+
+    .btns-hidden{
+        opacity: 0;
+    }
+}

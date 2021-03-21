@@ -1,0 +1,130 @@
+.group {
+    padding-bottom: 50px;
+
+    .color-palette{
+        width: 16px;
+        color: 63 64 69;
+    }
+
+    .input-add-task{
+        height: 35px;
+        width: 100%;
+        border: 1px solid transparent;
+        box-shadow: 0 3px 4px -5px #484444;
+        transition: .4s;
+
+        &:hover{
+            border: 1px solid grey;
+        }
+    }
+
+    .group-header {
+        height: 48px;
+        // padding: 0 8px;
+        padding-right: 8px;
+        display: flex;
+        text-align: center;
+        color: $clr3;
+        
+        .group-header-right {
+            min-width: 700px;
+            display: flex;
+            justify-content: space-between;
+            padding-right: .625rem;
+            > * {
+                padding: 0 10px;
+                font-size: 15px;
+                width: 9.375rem;   
+            }
+        }
+
+        .group-header-left {
+            width: 100%;
+            .down-arrow-container {
+                width: 15px;
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+            }
+
+            .group-title-input {
+                border: 1px dashed transparent;
+                padding: 3px 7px 3px 0;
+                background-color: inherit;
+                color: $clr3;
+                font-size: 17px;
+                width: 350px;
+                min-width: 200px;
+            }
+        }
+
+        > *:not(.color-picker){
+            display: flex;
+            align-items: center;
+            // justify-content: space-between;
+        }
+
+        
+
+        .group-edit {
+            flex-direction: column;
+            position: absolute;
+            width: 150px;
+            z-index: 5;
+            background-color: #fff;
+            padding: 5px;
+            border-radius: 3px;
+            box-shadow: 0 1px 2px 0 rgba(159, 159, 160, 0.3), 0 1px 3px 1px rgba(149, 152, 153, 0.15);
+            font-size: 14px;
+            transform: translate(12px, 40px);
+
+            > * {
+                text-align: left;
+                cursor: pointer;
+                padding: 3px 1px;
+
+                i {
+                    margin-right: 7px;
+                }
+
+                &:hover {
+                    background-color: rgb(246, 246, 246);
+                }
+            }
+        }
+
+        .color-picker {
+            position: absolute;
+            transform: translate(150%, 70%);
+            width: 100px;
+            padding: .2em;
+            border-radius: 3px;
+            background-color: #fff;
+            box-shadow: 0 1px 2px 0 rgba(159, 159, 160, 0.3), 0 1px 3px 1px rgba(149, 152, 153, 0.15);
+            cursor: default;
+            transition: .5s;
+            z-index: 5;
+        }
+    }
+
+    .bars-container{
+        width: 100%;
+        display: flex;
+        margin-top: rem(20px);
+
+        .bars-container-left {
+            width: 100%;
+        }
+
+        .bars-container-right {
+            min-width: 700px;
+            display: flex;
+            // justify-content: space-between;
+
+            .space {
+                width: 9.375rem;
+                padding: 0 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.home-page-header {
+    margin-left: 50px;
+
+    nav {
+        > * {
+            padding: 0 10px;
+            font-size: 25px;
+            color: $clr5;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+}

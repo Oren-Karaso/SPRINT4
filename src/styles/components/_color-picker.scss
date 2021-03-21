@@ -1,0 +1,56 @@
+.colors-container {
+    .btn-color {
+        width: 20px;
+        height: 20px;
+        margin: .2em;
+        border: 1px solid #d1d0d0;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .dark-green {
+        background-color: rgb(13, 87, 3);
+    }
+    .green {
+        background-color: rgb(35, 165, 18);
+    }
+    .khaki {
+        background-color: rgb(100, 98, 1);
+    }
+    .orange {
+        background-color: rgb(230, 114, 5);
+    }
+    .light-orange {
+        background-color: rgb(250, 162, 62);
+    }
+    .yellow {
+        background-color: rgb(255, 222, 36);
+    }
+    .purple {
+        background-color: rgb(78, 10, 167);
+    }
+    .light-purple {
+        background-color: rgb(126, 82, 177);
+    }
+    .blue {
+        background-color: rgb(21, 75, 226);
+    }
+    .bourdeaux {
+        background-color: rgb(63, 5, 5);
+    }
+    .red {
+        background-color: rgb(241, 1, 1);
+    }
+    .pink {
+        background-color: rgb(232, 109, 248);
+    }
+    .black {
+        background-color: rgb(0, 0, 0);
+    }
+    .brown {
+        background-color: rgb(83, 40, 4);
+    }
+    .gray {
+        background-color: rgb(64, 65, 64);
+    }
+}

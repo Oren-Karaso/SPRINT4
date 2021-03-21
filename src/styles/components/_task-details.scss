@@ -1,0 +1,33 @@
+.task-details {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    height: 100vh;
+    width: 570px;
+    z-index: 101;
+    transition: .5s;
+    text-align: left;
+    padding: 5px 20px;
+    box-shadow: 0 0 10px 0 $clr5;
+    // overflow-y: scroll;
+
+    .task-title {
+        font-size: 20px;
+        font-weight: bolder;
+        padding: 15px 0;
+    
+       }
+
+    .btns-container {
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $clr4;
+
+        > * {
+            font-size: 15px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+}

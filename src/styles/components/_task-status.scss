@@ -1,0 +1,41 @@
+.status-modal {
+    position: absolute;
+    transform: translate(0, 56.5%);
+    z-index: 1;
+
+    
+    .status-list {
+        width: 9.375rem;
+        top: 40px;
+        padding: 5px 10px;
+        z-index: 5;
+        box-shadow: 0 1px 2px 0 rgba(159, 159, 160, 0.3), 0 1px 3px 1px rgba(149, 152, 153, 0.15);
+        border-radius: 3px;
+        background-color: #fff;
+    }
+
+    .label {
+        margin: 5px 0;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $clr2;
+
+        &:hover {
+            background-color: $clr4;
+        }
+
+        i {
+            font-size: 13px;
+        }
+    }
+
+    .input-add-status {
+        margin-bottom: 15px;
+        padding: 10px;
+        border-color: $clr1;
+        border: none;
+        width: 130px;
+    }
+}

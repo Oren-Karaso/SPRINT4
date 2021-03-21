@@ -1,0 +1,53 @@
+.update-container {
+    .comment-content {
+        border: 1px solid $clr4;
+        border-radius: 5px;
+        margin-bottom: 15px;
+
+        .member-content {
+            font-size: 17px;
+            padding: 10px 12px 5px;
+            margin-bottom: 9px;
+            justify-content: space-between;
+
+            .comment-avatar {
+                margin-right: 10px;
+            }
+        }
+
+        .comment-update {
+            font-size: 15px;
+            padding: 10px;
+            padding-bottom: 20px;
+        }
+
+        .btns {
+            width: 100%;
+            border-top: 1px solid $clr4;
+            color: $clr3;
+            font-size: .8125rem;
+
+            > * {
+                width: 50%;
+                padding: 12px 8px;
+            }
+
+            .like-btn {
+                border-right: 1px solid $clr4;
+            }
+        }
+    }
+
+    form {
+        margin-bottom: 15px;
+
+        .update-input {
+            margin-bottom: 15px;
+        }
+
+        .file-btn {
+            cursor: pointer;
+        }
+    }
+
+}
